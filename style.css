@@ -24,6 +24,7 @@ header{
     width: 100%;
     position: fixed;
     margin: 0 auto;
+    //background-color: #fff;
 }
 
 header .desktop{
@@ -60,7 +61,7 @@ header .desktop .menu li{
 
 header .desktop .menu li a{
     font-family: 'Poppins', sans-serif;
-    font-size: 22pt;
+    font-size: 15pt;
     font-weight: 600;
     color: #2D2E5A;
     text-decoration: none;
@@ -79,42 +80,67 @@ header .desktop .menu li a[active]{
 
 .banner{
     height: 100vh;
+    padding-top: 15%;
     width: 70%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
+.banner .episode-info{
+    flex-grow: 1;
+    margin-right: 50px;
+}
+
 .banner .episode-info h1{
-    padding-top: 25px;
+    margin-top: 25px;
     font-family: 'Poppins', sans-serif;
     font-size: 45pt;
     line-height: 45pt;
     color: #9171FF;
 }
 
+.banner .episode-info .description{
+    font-family: 'Poppins', sans-serif;
+    color: #2D2E5A;
+    font-size: 12pt;
+    margin-top: 20px;
+}
+
 .banner .episode-info .details .info{
     margin-top: 30px;
     margin-right: 20px;
+    //background-color: coral;
+    text-align: center;
     display: inline-block;
 }
 
 .banner .episode-info .details .info .icon{
     color: #9171FF;
     font-size: 20pt;
+    margin-right: 10px;
+    //background-color: blue;
 }
 
 .banner .episode-info .details .info .text{
     color: #2D2E5A;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 14pt;
+    font-size: 12pt;
+    //background-color: chartreuse;
+}
+
+.banner .episode-info .button{
+    margin-top: 35px;
+}
+
+.banner .episode-cover{
+    flex-grow: 2;
 }
 
 .banner .episode-cover img{
-    width: 100%;
+    width: 400px;
     border-radius: 25px;
 }
 
@@ -127,11 +153,30 @@ header .desktop .menu li a[active]{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 13pt;
-    letter-spacing: 4px;
+    font-size: 10pt;
+    letter-spacing: 3px;
 }
 
 .badge.dark-purple{
     color: #fff;
     background-color: #2D2E5A !important;
+}
+
+.btn{
+    background-color: #242424;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 100em;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+}
+
+.btn .icon{
+    padding-right: 10px;
+}
+
+.btn.btn-primary{
+    background-color: #9171FF;
 }
