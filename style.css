@@ -24,7 +24,14 @@ header{
     width: 100%;
     position: fixed;
     margin: 0 auto;
-    //background-color: #fff;
+}
+
+header.scrolled{
+    background-color: #fff;
+}
+
+header.scrolled .logo img{
+    width: 75px !important;
 }
 
 header .desktop{
@@ -42,14 +49,15 @@ header .desktop .logo{
 }
 
 header .desktop .logo img{
-    width: 125px;
+    width: 115px;
     padding: 35px;
+    transition: all 0.2s ease;
 }
 
 header .desktop .menu{
     float: right;
     width: 100%;
-    padding-left: 100px;
+    padding-left: 5%;
     display: flex;
 }
 
