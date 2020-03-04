@@ -81,7 +81,7 @@ header .desktop .menu li a[active]{
 
 /*--------------------------*/
 
-.content{
+.content-banner{
     background-image: url("img/Background.png");
     background-size: cover;
 }
@@ -150,6 +150,69 @@ header .desktop .menu li a[active]{
 .banner .episode-cover img{
     width: 400px;
     border-radius: 25px;
+}
+
+/*--------------------------*/
+
+.content section{
+
+}
+
+.list.horizontal{
+    display: flex;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding-left: 15%;
+}
+
+.list.horizontal .item{
+    //width: 350px;
+    margin-right: 50px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.list.horizontal .item .item-cover{
+    width: 100%;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.list.horizontal .item a{
+    text-decoration: none;
+}
+
+.list.horizontal .item .item-title{
+    color: #9171FF;
+    font-size: 20pt;
+    line-height: 20pt;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: keep-all;
+    white-space: normal;
+    margin-bottom: 7px;
+}
+
+.list.horizontal .item .item-date{
+    color: #2D2E5A;
+}
+
+.list.horizontal:hover::-webkit-scrollbar-thumb{
+    background: #888;
+}
+
+.list.horizontal::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+}
+
+.list.horizontal::-webkit-scrollbar-thumb {
+    border-radius: 50px;
 }
 
 /*--------------------------*/
