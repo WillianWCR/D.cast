@@ -14,10 +14,6 @@
     display: none;
 }
 
-.content{
-    //display: none;
-}
-
 /*--------------------------*/
 
 header{
@@ -118,7 +114,6 @@ header .desktop .menu li a[active]{
 .banner .episode-info .details .info{
     margin-top: 30px;
     margin-right: 20px;
-    //background-color: coral;
     text-align: center;
     display: inline-block;
 }
@@ -127,7 +122,6 @@ header .desktop .menu li a[active]{
     color: #9171FF;
     font-size: 20pt;
     margin-right: 10px;
-    //background-color: blue;
 }
 
 .banner .episode-info .details .info .text{
@@ -135,7 +129,6 @@ header .desktop .menu li a[active]{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 12pt;
-    //background-color: chartreuse;
 }
 
 .banner .episode-info .button{
