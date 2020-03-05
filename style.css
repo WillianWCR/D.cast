@@ -79,10 +79,10 @@ header .desktop .menu li a[active]{
 .content-banner{
     background-image: url("img/Background.png");
     background-size: cover;
+    height: 100vh;
 }
 
 .banner{
-    height: 100vh;
     padding-top: 15%;
     width: 70%;
     display: flex;
