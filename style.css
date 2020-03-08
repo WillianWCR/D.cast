@@ -16,6 +16,28 @@
 
 /*--------------------------*/
 
+.align-left{
+    float: left;
+}
+
+.align-right{
+    float: right;
+}
+
+.content section{
+    margin: 0 15%;
+}
+
+.rounded{
+    border-radius: 20px;
+}
+
+.shadow{
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+/*--------------------------*/
+
 header{
     width: 100%;
     position: fixed;
@@ -180,7 +202,8 @@ header .desktop .menu li a[active]{
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
-    padding-left: 15%;
+    padding-left: 15vw;
+    margin: 0 -15vw;
 }
 
 .list.horizontal .item{
@@ -231,6 +254,85 @@ header .desktop .menu li a[active]{
 
 .list.horizontal::-webkit-scrollbar-thumb {
     border-radius: 50px;
+}
+
+/*--------------------------*/
+
+.card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card .cover img{
+    width: 400px;
+}
+
+.card .details{
+    max-width: 400px;
+}
+
+.card .details.right{
+    margin-left: 40px;
+}
+
+.card .details.left{
+    margin-right: 40px;
+}
+
+.card .details.left .title,
+.card .details.left .subtitle,
+.card .details.left .description{
+    text-align: right;
+}
+
+.card .details.left .socials{
+    float: right;
+}
+
+.card .details.left .socials .social{
+    margin-left: 20px;
+    margin-right: 0 !important;
+}
+
+.card .details .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40pt;
+    line-height: 40pt;
+    color: #9171FF;
+    margin-bottom: 5px;
+}
+
+.card .details .subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    color: #D8D8D8;
+    margin-bottom: 5px;
+}
+
+.card .details .description{
+    font-family: 'Proxima Nova';
+    font-size: 13pt;
+    font-weight: 500;
+    margin-top: 30px;
+    color: #2D2E5A;
+}
+
+.socials{
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.socials .social{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.socials .social a{
+    font-size: 25pt;
+    color: #9171FF;
+    text-decoration: none;
 }
 
 /*--------------------------*/
