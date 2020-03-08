@@ -164,7 +164,6 @@ header .desktop .menu li a[active]{
 
 .banner .episode-cover img{
     width: 400px;
-    border-radius: 25px;
 }
 
 /*--------------------------*/
@@ -216,9 +215,7 @@ header .desktop .menu li a[active]{
 
 .list.horizontal .item .item-cover{
     width: 100%;
-    border-radius: 20px;
     margin-bottom: 15px;
-    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .list.horizontal .item a{
