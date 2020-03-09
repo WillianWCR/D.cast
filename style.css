@@ -16,6 +16,32 @@
 
 /*--------------------------*/
 
+.align-left{
+    float: left;
+}
+
+.align-right{
+    float: right;
+}
+
+.content section{
+    margin: 0 15%;
+}
+
+.rounded{
+    border-radius: 20px;
+}
+
+.shadow{
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.full-width{
+    width: 100%;
+}
+
+/*--------------------------*/
+
 header{
     width: 100%;
     position: fixed;
@@ -152,7 +178,6 @@ header .desktop .menu .menu-item a[active]{
 
 .banner .episode-cover img{
     width: 400px;
-    border-radius: 25px;
 }
 
 /*--------------------------*/
@@ -191,7 +216,8 @@ header .desktop .menu .menu-item a[active]{
     display: flex;
     overflow-x: scroll;
     white-space: nowrap;
-    padding-left: 15%;
+    padding-left: 15vw;
+    margin: 0 -15vw;
 }
 
 .list.horizontal .item{
@@ -203,9 +229,7 @@ header .desktop .menu .menu-item a[active]{
 
 .list.horizontal .item .item-cover{
     width: 100%;
-    border-radius: 20px;
     margin-bottom: 15px;
-    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
 .list.horizontal .item a{
@@ -246,6 +270,128 @@ header .desktop .menu .menu-item a[active]{
 
 /*--------------------------*/
 
+.card{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.card .cover img{
+    width: 400px;
+}
+
+.card .details{
+    max-width: 400px;
+}
+
+.card .details.right{
+    margin-left: 40px;
+}
+
+.card .details.left{
+    margin-right: 40px;
+}
+
+.card .details.left .title,
+.card .details.left .subtitle,
+.card .details.left .description{
+    text-align: right;
+}
+
+.card .details.left .socials{
+    float: right;
+}
+
+.card .details.left .socials .social{
+    margin-left: 20px;
+    margin-right: 0 !important;
+}
+
+.card .details .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40pt;
+    line-height: 40pt;
+    color: #9171FF;
+    margin-bottom: 5px;
+}
+
+.card .details .subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15pt;
+    font-weight: 500;
+    color: #D8D8D8;
+    margin-bottom: 5px;
+}
+
+.card .details .description{
+    font-family: 'Proxima Nova';
+    font-size: 13pt;
+    font-weight: 500;
+    margin-top: 30px;
+    color: #2D2E5A;
+}
+
+.socials{
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.socials .social{
+    margin-right: 20px;
+    list-style-type: none;
+}
+
+.socials .social a{
+    font-size: 25pt;
+    color: #9171FF;
+    text-decoration: none;
+}
+
+/*--------------------------*/
+
+.full-card{
+    background-color: #9171FF;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.full-card .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40pt;
+    font-weight: 700;
+    line-height: 40pt;
+    color: #fff;
+}
+
+.input-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-group .input{
+    border: none;
+    padding: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    color: #2D2E5A;
+    width: 100%;
+    float: right;
+}
+
+.input-group .input::placeholder{
+    color: #D8D8D8;
+}
+
+.input-group .btn{
+    position: absolute;
+    right: 15px;
+}
+
+/*--------------------------*/
+
 .badge{
     background-color: #242424;
     padding: 5px 20px;
@@ -262,6 +408,8 @@ header .desktop .menu .menu-item a[active]{
     background-color: #2D2E5A !important;
 }
 
+/*--------------------------*/
+
 .btn{
     background-color: #242424;
     color: #fff;
@@ -271,6 +419,8 @@ header .desktop .menu .menu-item a[active]{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 15pt;
+    border: none;
+    cursor: pointer;
 }
 
 .btn .icon{
@@ -280,3 +430,5 @@ header .desktop .menu .menu-item a[active]{
 .btn.btn-primary{
     background-color: #9171FF;
 }
+
+/*--------------------------*/
