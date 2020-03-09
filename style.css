@@ -57,13 +57,14 @@ header .desktop .menu{
     display: flex;
 }
 
-header .desktop .menu li{
+header .desktop .menu .menu-item{
+    position: relative;
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-header .desktop .menu li a{
+header .desktop .menu .menu-item a{
     font-family: 'Poppins', sans-serif;
     font-size: 15pt;
     font-weight: 600;
@@ -71,8 +72,17 @@ header .desktop .menu li a{
     text-decoration: none;
 }
 
-header .desktop .menu li a[active]{
+header .desktop .menu .menu-item a[active]{
     color: #9171FF;
+}
+
+.dropdown{
+    position: absolute;
+}
+
+.dropdown li{
+    position: relative;
+    list-style-type: none;
 }
 
 /*--------------------------*/
