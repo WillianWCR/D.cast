@@ -133,12 +133,15 @@ header .desktop .menu .menu-item a[active]{
     margin-right: 50px;
 }
 
-.banner .episode-info h1{
+.banner .episode-info .header{
     margin-top: 25px;
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     font-size: 45pt;
+    text-decoration: none;
     line-height: 45pt;
     color: #9171FF;
+    display: block;
 }
 
 .banner .episode-info .description{
