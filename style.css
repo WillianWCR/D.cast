@@ -533,3 +533,44 @@ footer p{
 }
 
 /*--------------------------*/
+
+@media only screen and (max-width: 600px) {
+
+    header{
+        top: 0;
+    }
+
+    header .desktop .logo{
+        width: 100%;
+    }
+
+    header .desktop .menu{
+        display: none !important;
+    }
+
+    header .desktop{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header .desktop .menu{
+        display: block;
+        flex-direction: row;
+    }
+
+    .content-banner{
+        height: 100%;
+    }
+
+    .banner{
+        display: block;
+        margin-top: 150px;
+    }
+
+    .banner .episode-info .header{
+        font-size: 25pt;
+        line-height: 25pt;
+    }
+}
