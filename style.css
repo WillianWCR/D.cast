@@ -577,6 +577,11 @@ footer p{
         font-size: 15pt;
     }
 
+    footer p, footer .copyright{
+        margin: 0 10%;
+        margin-bottom: 10px;
+    }
+
     .content-banner{
         height: 100%;
         margin-bottom: 50px;
@@ -631,6 +636,10 @@ footer p{
 
     .card .details.left .socials{
         float: none;
+    }
+
+    .card .cover{
+        margin-bottom: 15px;
     }
 
     .card .cover img{
