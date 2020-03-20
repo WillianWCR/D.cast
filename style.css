@@ -83,6 +83,10 @@ header .desktop .menu .menu-item{
     list-style-type: none;
 }
 
+header .desktop .menu .menu-item i{
+    margin-left: 10px;
+}
+
 header .desktop .menu .menu-item a{
     font-family: 'Poppins', sans-serif;
     font-size: 15pt;
@@ -526,7 +530,7 @@ footer p{
 
 /*--------------------------*/
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 
     .content section{
         margin: 0 10%;
@@ -534,6 +538,13 @@ footer p{
 
     header{
         top: 0;
+    }
+
+    header .desktop{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 
     header .desktop .logo{
@@ -545,19 +556,44 @@ footer p{
     }
 
     header .desktop .menu{
-        display: none !important;
-    }
-
-    header .desktop{
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    header .desktop .menu{
         display: block;
         flex-direction: row;
+        background-color: #fff;
+        text-align: left;
+        transition: max-height 0.2s ease-out;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    header .desktop .menu .menu-item{
+        margin: 20px 0;
+        display: block;
+        margin-left: 10vw;
+    }
+
+    .hamburguer{
+        display: block !important;
+    }
+
+    .dropdown{
+        position: relative;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+        display: block !important;
+        box-shadow: 0 0 0 0 !important;
+        text-align: left;
+        margin-left: 10vw;
+    }
+
+    .dropdown .dropdown-item{
+        background-color: #fff;
+        margin: 20px 0;
+        padding: 0;
+    }
+
+    .menu-item:hover .dropdown{
+        transition: all 0.2s ease;
     }
 
     .footer{
@@ -679,9 +715,13 @@ footer p{
     }
 }
 
+@media (max-width: 1200px){
+
+}
+
 .hamburguer {
     position: relative;
-    display: block;
+    display: none;
     background: #000;
     width: 30px;
     height: 2px;
@@ -707,6 +747,17 @@ footer p{
 
 .hamburguer:after {
     bottom: -10px;
+}
+
+.label-hamburguer{
+    position: absolute;
+    right: 10vw;
+    top: 10vw;
+    transition: all 0.2s ease;
+}
+
+header.scrolled .label-hamburguer{
+    top: 5vw
 }
 
 #menu-hamburguer {
