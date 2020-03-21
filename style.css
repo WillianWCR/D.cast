@@ -213,6 +213,7 @@ footer p{
     background-image: url("img/Background.png");
     background-size: cover;
     height: 100vh;
+    margin-bottom: -200px;
 }
 
 .banner{
@@ -740,6 +741,23 @@ blockquote {
     .footer{
         width: 90%;
     }
+
+    .banner{
+        margin-top: 150px;
+    }
+
+    .banner .episode-cover{
+        display: none;
+    }
+
+    .banner .episode-info{
+        margin: 0;
+    }
+
+    .banner .episode-info .header{
+        font-size: 35pt;
+        line-height: 35pt;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -833,7 +851,7 @@ blockquote {
 
     .content-banner{
         height: 100%;
-        margin-bottom: 50px;
+        margin-bottom: -150px;
     }
 
     .banner{
@@ -879,6 +897,7 @@ blockquote {
         flex-direction: column;
         text-align: center;
         margin-bottom: 75px;
+        width: 100%;
     }
 
     .card .details.right{
@@ -904,7 +923,7 @@ blockquote {
     }
 
     .card .cover img{
-        width: 80%;
+        max-width: 80%;
     }
 
     .card.align-right{
@@ -999,6 +1018,7 @@ blockquote {
 
     .banner{
         max-width: 1170px;
+        padding-top: 250px;
     }
 
     .list.horizontal{
