@@ -304,8 +304,11 @@ footer p{
     color: #9171FF;
     font-family: 'Poppins', sans-serif;
     font-size: 20pt;
+    line-height: 20pt;
     font-weight: 700;
     margin-left: 12.75%;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 /*--------------------------*/
@@ -589,6 +592,82 @@ footer p{
 
 /*--------------------------*/
 
+.episode-header{
+    display: flex;
+    align-items: center;
+}
+
+.episode-header .episode-cover img{
+    width: 400px;
+}
+
+.episode-header .episode-info{
+    margin-left: 50px;
+}
+
+.episode-header .episode-info .header{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 45pt;
+    text-decoration: none;
+    line-height: 45pt;
+    color: #9171FF;
+    display: block;
+}
+
+.episode-header .episode-info .details .info{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.episode-header .episode-info .details .info .icon{
+    color: #9171FF;
+    font-size: 20pt;
+    margin-right: 10px;
+}
+
+.episode-header .episode-info .details .info .text{
+    color: #2D2E5A;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+.episode-header .episode-info .tags{
+    margin-bottom: 20px;
+}
+
+.episode-description{
+    margin-top: 35px;
+    font-family: 'Proxima Nova', sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    line-height: 20pt;
+    max-width: 75%;
+    float: left;
+    color: #2D2E5A;
+}
+
+.episode-description p{
+    margin-bottom: 20px;
+}
+
+.episode-description a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #9171FF;
+}
+
+.episode-description a:hover{
+    color: #2D2E5A;
+    transition: all ease 0.5s;
+}
+
+/*--------------------------*/
+
 @media only screen and (max-width: 1250px) {
     header .desktop{
         width: 90%;
@@ -795,6 +874,49 @@ footer p{
     .full-card .input-group .btn{
         position: relative;
         right: 0;
+    }
+
+    .episode-header{
+        flex-direction: column;
+    }
+
+    .episode-header .episode-cover{
+        margin-bottom: 20px;
+    }
+
+    .episode-header .episode-cover img{
+        width: 250px;
+    }
+
+    .episode-header .episode-info{
+        margin-left: 0;
+    }
+
+    .episode-header .episode-info .header{
+        font-size: 25pt;
+        line-height: 25pt;
+    }
+
+    .episode-header .episode-info{
+        text-align: center;
+    }
+
+    .episode-header .episode-info .details{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .episode-header .episode-info .details .info{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .episode-header .episode-info .tags{
+        margin: 20px 0;
+    }
+
+    .episode-description{
+        max-width: 100%;
     }
 }
 
