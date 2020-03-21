@@ -16,8 +16,10 @@
     float: right;
 }
 
-.content section{
-    margin: 0 15%;
+.content{
+    min-height: 75vh;
+    width: 70%;
+    margin-top: 200px;
 }
 
 .rounded{
@@ -39,6 +41,7 @@ header{
     position: fixed;
     margin: 0 auto;
     z-index: 999;
+    top: 0;
 }
 
 header.scrolled{
@@ -51,7 +54,7 @@ header.scrolled .logo img{
 }
 
 header .desktop{
-    width: 75%;
+    width: 70%;
     height: 100%;
     padding: 0;
     display: flex;
@@ -71,14 +74,12 @@ header .desktop .logo img{
 
 header .desktop .menu-container{
     width: 100%;
-    padding-left: 5%;
     display: flex;
 }
 
 header .desktop .menu{
     float: right;
     width: 100%;
-    padding-left: 5%;
     display: flex;
 }
 
@@ -116,7 +117,7 @@ footer{
 }
 
 .footer{
-    margin: 0 15%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
@@ -295,7 +296,6 @@ footer p{
     margin: 0;
     position: absolute;
     top: 50%;
-    margin-left: 2.5%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -305,7 +305,7 @@ footer p{
     font-family: 'Poppins', sans-serif;
     font-size: 20pt;
     font-weight: 700;
-    margin-left: 15%;
+    margin-left: 12.75%;
 }
 
 /*--------------------------*/
@@ -365,6 +365,52 @@ footer p{
 
 .list.horizontal::-webkit-scrollbar-thumb {
     border-radius: 50px;
+}
+
+.list.vertical{
+    display: block;
+}
+
+.list.vertical .item{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.list.vertical .item .details{
+    margin-left: 25px;
+}
+
+.list.vertical .item .details .button{
+    margin: 15px 0;
+    margin-top: 30px;
+}
+
+.list.vertical .item .item-title{
+    color: #9171FF;
+    font-size: 20pt;
+    line-height: 20pt;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: keep-all;
+    white-space: normal;
+    margin: 10px 0;
+}
+
+.list.vertical .item .item-description{
+    text-indent: 20pt;
+}
+
+.list.vertical .item .item-date{
+    margin-bottom: 20px;
+}
+
+.list.vertical .item .cover img{
+    width: 250px;
 }
 
 /*--------------------------*/
@@ -537,10 +583,21 @@ footer p{
 
 /*--------------------------*/
 
+@media only screen and (max-width: 1250px) {
+    header .desktop{
+        width: 90%;
+    }
+
+    .footer{
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
-    .content section{
-        margin: 0 10%;
+    .content{
+        margin-top: 200px;
+        width: 90%;
     }
 
     header{
@@ -653,8 +710,20 @@ footer p{
     }
 
     .list.horizontal {
-        padding-left: 10vw;
-        margin: 0 -10vw;
+        padding-left: 5vw;
+        margin: 0 -5vw;
+    }
+
+    .list.vertical .item{
+        flex-direction: column;
+    }
+
+    .list.vertical .item .cover{
+        margin-bottom: 20px;
+    }
+
+    .list.vertical .item .details{
+        margin: 0;
     }
 
     .card{
@@ -702,6 +771,7 @@ footer p{
         font-size: 25pt;
         line-height: 25pt;
         margin-bottom: 25px;
+        text-align: center;
     }
 
     .full-card .input-group{
@@ -722,8 +792,27 @@ footer p{
     }
 }
 
-@media (max-width: 1200px){
+@media (min-width: 1250px){
+    .content{
+        max-width: 1170px;
+    }
 
+    header .desktop{
+        max-width: 1170px;
+    }
+
+    .footer{
+        max-width: 1170px;
+    }
+
+    .banner{
+        max-width: 1170px;
+    }
+
+    .list.horizontal{
+        padding-left: 0 !important;
+        margin: 0 !important;
+    }
 }
 
 .hamburguer {

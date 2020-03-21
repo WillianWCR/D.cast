@@ -14,7 +14,7 @@ var i;
 for (i = 0; i < collapseElements.length; i++) {
     collapseElements[i].addEventListener("click", function() {
         this.classList.toggle("active");
-        var content = this.querySelector('.dropdown');
+        var content = this.querySelector('.sub-menu');
         if (content.style.maxHeight){
             content.style.maxHeight = null;
           } else {
