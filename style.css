@@ -69,6 +69,12 @@ header .desktop .logo img{
     transition: all 0.2s ease;
 }
 
+header .desktop .menu-container{
+    width: 100%;
+    padding-left: 5%;
+    display: flex;
+}
+
 header .desktop .menu{
     float: right;
     width: 100%;
@@ -165,7 +171,7 @@ footer p{
 
 /*--------------------------*/
 
-.dropdown{
+.sub-menu{
     position: absolute;
     top: 75%;
     text-align: center;
@@ -173,9 +179,10 @@ footer p{
     width: 100%;
     transition: all 0.2s ease;
     display: none;
+    box-shadow: 0 25px 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-.dropdown li{
+.sub-menu li{
     position: relative;
     list-style-type: none;
     background-color: #fff;
@@ -189,12 +196,12 @@ footer p{
     margin-left: -20px;
 }
 
-.dropdown .dropdown-item:hover a{
+.sub-menu .sub-menu-item:hover a{
     color: #9171FF !important;
     transition: all 0.2s ease;
 }
 
-.menu-item:hover .dropdown{
+.menu-item:hover .sub-menu{
     display: block;
     transition: all 0.2s ease;
 }
@@ -560,7 +567,7 @@ footer p{
         flex-direction: row;
         background-color: #fff;
         text-align: left;
-        transition: max-height 0.2s ease-out;
+        transition: max-height 0.5s ease-out;
         max-height: 0;
         overflow: hidden;
     }
@@ -575,7 +582,7 @@ footer p{
         display: block !important;
     }
 
-    .dropdown{
+    .sub-menu{
         position: relative;
         max-height: 0;
         overflow: hidden;
@@ -586,13 +593,13 @@ footer p{
         margin-left: 10vw;
     }
 
-    .dropdown .dropdown-item{
+    .sub-menu .sub-menu-item{
         background-color: #fff;
         margin: 20px 0;
         padding: 0;
     }
 
-    .menu-item:hover .dropdown{
+    .menu-item:hover .sub-menu{
         transition: all 0.2s ease;
     }
 
