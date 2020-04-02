@@ -694,6 +694,33 @@ footer p{
 
 /*--------------------------*/
 
+.pagination{
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.pagination a{
+    color: #9171FF;
+    padding: 15px 30px;
+    border-radius: 100em;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 15pt;
+    border: 3px solid #9171FF;
+    cursor: pointer;
+}
+
+.pagination .previous{
+    float: left;
+}
+
+.pagination .next{
+    float: right;
+}
+
+/*--------------------------*/
+
 .page-content{
     margin-top: 35px;
     font-family: 'Proxima Nova', sans-serif;
