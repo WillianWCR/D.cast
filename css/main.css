@@ -989,6 +989,10 @@ blockquote {
         margin-bottom: 10px;
     }
 
+    .artigo-content{
+        width: 80%;
+    }
+
     .content-banner{
         height: 100%;
         margin-bottom: -150px;
@@ -1146,6 +1150,10 @@ blockquote {
 @media (min-width: 1250px){
     .content{
         max-width: 1170px;
+    }
+
+    .artigo-content{
+        width: 750px;
     }
 
     header .desktop{
